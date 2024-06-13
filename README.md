@@ -67,3 +67,27 @@ Make sure you have the following installed on your system:
 ```sh
 git clone https://github.com/megh-bari/Full-stack-development.git
 cd Full-stack-development
+```
+
+## Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -m 'Add some feature').
+Push to the branch (git push origin feature-branch).
+Open a Pull Request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+For any inquiries, please contact:
+
+Name: Megh Bari
+Email:  meghbari01@gamail.com
+- **Instagram:** [@spidey._.01](https://www.instagram.com/spidey._.01/)
+- **Twitter:** [@megh_bari](https://twitter.com/megh_bari/)
+
+
+## Happy Coding 🎈
