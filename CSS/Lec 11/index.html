@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 72vh;
+            background-color: beige;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 80px;
+        }
+
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: lime;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            position: relative;
+            /* animation-name: movement;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            animation-direction:alternate;
+            animation-timing-function: cubic-bezier(1, 0.01, 0, 0.97);
+            animation-fill-mode: forwards; */
+
+            /* Animation Shorthand */
+            /* duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name  */
+            animation: 3s ease-in-out infinite alternate movement;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: relative;
+            animation: 3s ease-in-out infinite alternate leftmovement;
+        }
+
+        @keyframes movement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1040px;
+            }
+        }
+
+        @keyframes leftmovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 200px;
+                right: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="box1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

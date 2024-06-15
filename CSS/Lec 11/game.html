@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+    
+        }
+
+        .box1 {
+            height: 100px;
+            width: 400px;
+            border-radius: 20px;
+            border: 2px solid rgb(0, 0, 255);
+            background-color: blue;
+            margin-top: 12px;
+            position: relative;
+            animation: 4s ease-in-out infinite alternate rightmovement;
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            border: 1px solid rgb(0, 0, 255);
+            background-color: blue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            position: relative;
+            
+            animation: 10s ease-in-out infinite alternate circlemovement;
+        }
+
+        .box2 {
+            height: 100px;
+            width: 400px;
+            border-radius: 20px;
+            border: 2px solid rgb(0, 0, 255);
+            background-color: blue;
+            margin-bottom: 12px;
+            position: relative;
+            animation: 4s ease-in-out infinite alternate leftmovement;
+        }
+
+        @keyframes rightmovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1133px;
+            }
+        }
+
+        @keyframes leftmovement {
+            from {
+                top: 0;
+                left: 1133px;
+            }
+
+            to {
+                top: 0;
+                left: 0;
+            }
+        }
+
+        @keyframes circlemovement {
+            0% {
+                top: 40%;
+                left: 0;
+            }
+
+            25% {
+                top: -40%;
+                left: 40%;
+            }
+
+            50% {
+                top: 40%;
+                right: -40%;
+            }
+
+            75% {
+                top: -40%;
+                right: 40%;
+            }
+
+            100% {
+                top: 40%;
+                left: -40%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="circle">
+            <div class="center"></div>
+        </div>
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>
