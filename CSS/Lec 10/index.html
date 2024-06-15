@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* custom variable */
+        :root {
+            --promary-color: red;
+            --bgc: yellow;
+            --border-color: black;
+        }
+
+        .container {
+            background-color: var(--bgc);
+            border: 2px solid var(--promary-color);
+            margin: 20px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: beige;
+            border: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 11px 15px 20px 0px #1b1919
+        }
+
+        /* img {
+            box-shadow: 6px 6px 12px black;
+        } */
+
+        .box>p {
+            font-size: 100px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 50px;
+            text-shadow: 0px 5px #e4cbcb;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.png" alt="">
+            <p>Hello Coders</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

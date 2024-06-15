@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            margin: 12px;
+        }
+        .container{
+            display: flex;
+        }
+        .box1{
+            background-color: aqua;
+        }
+        .box2{
+            background-color: orange;
+        }
+        .box3{
+            background-color: yellow;
+        }
+        .box4{
+            background-color: red;
+        }
+
+        @media only screen and (min-width:640px) {
+            .container{
+                flex-direction: row;
+            }
+        }
+
+        @media only screen and (max-width:640px) {
+            .container{
+               
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    </div>
+</body>
+</html>

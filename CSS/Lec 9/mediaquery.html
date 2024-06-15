@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: 800px;
+        margin: 40px;
+
+    }
+
+    .box-left {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box-right {
+        width: 50%;
+        margin: 20px;
+
+    }
+
+    p {
+        border-radius: 24px;
+        cursor: pointer;
+        background-color: rgb(255, 242, 0);
+        font-size: 30px;
+        width: 200px;
+        text-align: center;
+    }
+
+    img {
+        width: 420px;
+        border-radius: 12px;
+        position: relative;
+        left: -20px;
+    }
+
+    @media only screen and (max-width:770px) {
+
+        .container {
+            position: relative;
+            left: 10%;
+            width: 500px;
+            padding: 40px;
+            flex-direction: column-reverse;
+        }
+
+        .box-left {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        img {
+            position: relative;
+            right: 5%;
+        }
+    }
+
+    @media only screen and (max-width:321px) {
+        .container {
+            position: relative;
+            left: -10%;
+        }
+    }
+
+    @media  only screen and (max-width:426px){
+        .container {
+            position: relative;
+            left: -10%;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="box-left">
+        <p>Download</p>
+        <p>Read more</p>
+    </div>
+
+    <div class="box-right">
+        <img src="img.jpeg" alt="">
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>
