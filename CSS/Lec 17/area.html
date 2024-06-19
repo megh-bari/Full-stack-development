@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Grids</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: grey;
+            gap: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-areas: "header header header"
+                                 "sidebar content-1 content-1"
+                                 "sidebar content-2 content-3"
+                                 "footer footer footer";
+        }
+        .items{
+            background-color: yellow;
+            border: 2px solid green;
+        }
+
+        #box1{
+            grid-area: header;
+        }
+        #box2{
+            grid-area: sidebar;
+        }
+        #box3{
+            grid-area: content-1;
+        }
+        #box4{
+            grid-area: content-2;
+        }
+        #box5{
+            grid-area: content-3;
+        }
+        #box6{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="box1">1</div>
+        <div class="items" id="box2">2</div>
+        <div class="items" id="box3">3</div>
+        <div class="items" id="box4">4</div>
+        <div class="items" id="box5">5</div>
+        <div class="items" id="box6">6</div>
+
+    </div>
+</body>
+</html>
