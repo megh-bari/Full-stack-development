@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layouts</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            background-color: #060739;
+            gap: 10px;
+            padding: 20px;
+            grid-template-areas: "Lside head head cont"
+                                 "Lside cont-1 cont-2 Rside"
+                                 "Lside cont-3 cont-4 Rside";
+            
+        }
+ 
+        #box-1{
+            grid-area: Lside;
+            background-color: rgb(0, 255, 0);
+        }
+        #box-2{
+            grid-area: head;
+            background-color: rgb(0, 255, 0);
+        }
+        #box-3{
+            background-color: red;
+        }
+        #box-4{
+            background-color: orange;
+        }
+        #box-5{
+            background-color: red;
+        }
+        #box-6{
+            grid-area: Rside;
+            background-color: rgb(0, 255, 0);
+        }
+        #box-7{
+            background-color: red;
+        }
+        #box-8{
+            background-color: orange;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="box-1"></div>
+        <div class="items" id="box-2"></div>
+        <div class="items" id="box-3"></div>
+        <div class="items" id="box-4"></div>
+        <div class="items" id="box-5"></div>
+        <div class="items" id="box-6"></div>
+        <div class="items" id="box-7"></div>
+        <div class="items" id="box-8"></div>
+    </div>
+</body>
+</html>

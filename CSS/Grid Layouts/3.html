@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layouts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+body{
+    background-color: rgba(255, 81, 0, 0.919);
+}
+        .container {
+            height: 100vh;
+            width: 100vw;
+            gap: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-areas: "head head head"
+                "sidebar main-content main-content"
+                "sidebar main-content main-content"
+                "footer footer footer";
+        }
+
+        .items {
+            background-color: #fff;
+            border-radius: 12px;
+            font-size: 2rem;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box1 {
+            grid-area: head;
+        }
+
+        #box2 {
+            grid-area: sidebar;
+        }
+
+        #box3 {
+            grid-area: main-content;
+        }
+
+        #box4 {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="box1">Header</div>
+        <div class="items" id="box2">Sidebar</div>
+        <div class="items" id="box3">Main Content</div>
+        <div class="items" id="box4">Footer</div>
+    </div>
+</body>
+
+</html>
