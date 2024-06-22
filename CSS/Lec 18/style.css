@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    height: 100vh;
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 50vw;
+    background-color: rgb(239, 239, 232);
+    padding: 40px;
+    border-radius: 30px;
+
+}
+h1, p, a{
+    margin-block: 20px;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul>li{
+    padding: 5px;
+}
+
+/* Pseudo Class: used single colon :*/
+
+/* .learn-more-btn:link{
+    text-decoration: none;
+    color: green;
+}
+
+.learn-more-btn:visited{
+    color: purple;
+}
+
+.learn-more-btn:active{
+    color: aqua;
+}
+.learn-more-btn:hover{
+    transition: all ease 1s;
+    color: orange;
+} */
+
+/* ul>li:first-child{
+    background-color: violet;
+}
+ul>li:last-child{
+    background-color: yellow;
+} */
+
+/* nth child */
+/* formula:  an+b */
+
+/* ul>li:nth-child(odd){
+    background-color: lime;
+} */
+
+/* Pseudo Elements used double colon :: */
+
+h1::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+::selection{
+    background-color: black;
+    color: white;
+}
+
+p::first-line{
+    background-color: yellow;
+}
+
+/* before and after */
+
+h2::before{
+    content: 'anything';
+}
+
+h2::after{
+    content: 'you say';
+}
+
+.required::after{
+    content: '*';
+    color: red;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.imp::after{
+    background-color: red;
+    color: white;
+    content: 'Important!';
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 0.8rem;
+    vertical-align: middle;
+    margin-left: 20px;
+}
